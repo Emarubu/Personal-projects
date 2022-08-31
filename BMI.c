@@ -24,8 +24,8 @@ void BMI(int w, float h)
 
         if (temp < 18.5)
             printf("your weight status is underweight\n", BMI);
-        else if (temp > 20.5 && (temp < 25))
+        else if ((temp > 18.5) && (temp < 25))
             printf("your weight status is Normal weight\n", BMI);
-        else
+        else if (temp > 25)
             printf("your weight status is overweight\n", BMI);
 }
